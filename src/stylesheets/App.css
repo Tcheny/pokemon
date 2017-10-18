@@ -1,28 +1,30 @@
-.App {
+.DisplayImg {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.pokedex {
+  position: relative;
+  z-index: -1;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.InputSearch input{
+  position: absolute;
+  text-align: center;
+  left: 360px;
+  top: 74%;
+  width: 100px;
+  border: none;
+  background-color: #56AB63;
 }
 
-.App-title {
-  font-size: 1.5em;
+.InputSearch button{
+  position: absolute;
+  left: 390px;
+  top: 78%;
 }
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.Pokecard {
+  position: absolute;
+  left: 420px;
+  top: 33%;
 }
