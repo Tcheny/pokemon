@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import request from 'request';
 
-import pokedex from '../assets/pokedex.png';
 import PokeCard from './PokeCard';
 
 class Display extends Component {
@@ -13,22 +12,24 @@ class Display extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    request(`https://pokeapi.co/api/v2/pokemon-form/${nextProps.num}`, (err, res, body)=>{
+    request(`https://pokeapi.co/api/v2/pokemon/${nextProps.num}`, (err, res, body)=>{
+      if(err) res.redirect('http://localhost:3000')
       this.setState({
         data : JSON.parse(body)
       });
-      console.log(this.state.data);
+      console.log(this.state.data.sprites.front_default);
     })
   }
 
   render() {
     return (
       <div className="DisplayImg">
-        <img className="pokedex" src={pokedex} alt="pokedex"/>
         <PokeCard
           name={this.state.data.name}
-          // front={this.state.data.sprites.front_default}
-          // back={this.state.data.sprites.back_default}
+          weight={this.state.data.weight}
+          height={this.state.data.height}
+          front={this.state.data && this.state.data.sprites.front_default}
+          back={this.state.data && this.state.data.sprites.back_default}
         />
       </div>
     );

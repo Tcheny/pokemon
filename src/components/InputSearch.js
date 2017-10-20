@@ -8,7 +8,7 @@ class InputSearch extends Component {
     };
   }
 
-  // maj le state et stocke, gère la valeur de l'input
+  // met à jour le state et stocke, gère la valeur de l'input
   handleChange=(e)=>{
   this.setState({
     inputValue : e.target.value
@@ -17,7 +17,7 @@ class InputSearch extends Component {
   // console.log(e.target.value);
   // this.props.func(e.target.value); // on stocke la valeur insérée dans la func
 
-  // maj du state parent
+  // met à jour le state parent
   handleClick=(e)=>{
     e.preventDefault();
     this.props.func(this.state.inputValue)
@@ -29,10 +29,12 @@ class InputSearch extends Component {
 
   render() {
     return (
-      <form className="InputSearch">
-        <input type="text" onChange={this.handleChange} value={this.state.inputValue} placeholder="entrez un numero"/>
-        <button onClick={this.handleClick}>GO !</button>
-      </form>
+      <div className="InputSearch">
+        <form className="">
+          <input type="text" onChange={this.handleChange} value={this.state.inputValue} placeholder="Number"/>
+          <button onClick={this.handleClick}>GO !</button>
+        </form>
+      </div>
     );
   }
 
