@@ -30,7 +30,7 @@ class InputSearch extends Component {
   render() {
     return (
       <div className="InputSearch">
-        <form className="">
+        <form>
           <input type="text" onChange={this.handleChange} value={this.state.inputValue} placeholder="Number"/>
           <button onClick={this.handleClick}>GO !</button>
         </form>

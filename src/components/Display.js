@@ -17,7 +17,6 @@ class Display extends Component {
       this.setState({
         data : JSON.parse(body)
       });
-      console.log(this.state.data.sprites.front_default);
     })
   }
 

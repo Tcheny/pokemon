@@ -26,11 +26,13 @@ class App extends Component {
         <header>
           <img src={logo} alt="logo"/>
         </header>
-        <div className="pokedex">
-          <img src={pokedex} alt="pokedex"/>
+        <section>
+          <div className="pokedex">
+            <img src={pokedex} alt="pokedex"/>
+          </div>
           <InputSearch func={this.inputNumPokemon} />
           <Display num={this.state.pokemon}/>
-        </div>
+        </section>
       </div>
     );
   }

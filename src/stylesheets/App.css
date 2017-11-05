@@ -14,19 +14,23 @@ header img {
   width: 350px;
   margin: 20px 0;
 }
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .pokedex {
   position: relative;
-  z-index: -1;
-  top: 25%;
-  left: 25%;
+  z-index: 1
 }
 
 .InputSearch input {
   position: absolute;
   z-index: 2;
-
-  left: 7.2%;
-  top: 84%;
+  left: 28%;
+  top: 99.5%;
 
   width: 110px;
   border: none;
@@ -40,8 +44,8 @@ header img {
   position: absolute;
   z-index: 3;
 
-  left: 7.4%;
-  top: 72%;
+  left: 28.5%;
+  top: 89.5%;
 
   width: 135px;
   height: 30px;
@@ -58,26 +62,27 @@ header img {
   position: absolute;
   z-index: 4;
 
-  left: 355px;
-  top: 35%;
+  left: 28%;
+  top: 59%;
 
   display: flex;
 }
 
 .pokeName {
-  width: 245px;
-  height: 100px;
+  width: 243px;
+  height: 98px;
 
   position: absolute;
   z-index: 5;
 
-  left: 34.7%;
-  top: 31%;
+  left: 55.5%;
+  top: 54%;
 
   color: #000;
   background-color: #fff;
   border: 2px solid #000;
   border-radius: 10px;
+  text-align: center;
 }
 
 .pokeName p {
