@@ -16,14 +16,16 @@ header img {
 }
 .pokedex {
   position: relative;
-  text-align: center;
+  z-index: -1;
+  top: 25%;
+  left: 25%;
 }
 
 .InputSearch input {
   position: absolute;
   z-index: 2;
 
-  left: 358px;
+  left: 7.2%;
   top: 84%;
 
   width: 110px;
@@ -38,7 +40,7 @@ header img {
   position: absolute;
   z-index: 3;
 
-  left: 360px;
+  left: 7.4%;
   top: 72%;
 
   width: 135px;
@@ -69,7 +71,7 @@ header img {
   position: absolute;
   z-index: 5;
 
-  left: 711px;
+  left: 34.7%;
   top: 31%;
 
   color: #000;

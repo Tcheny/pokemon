@@ -2,7 +2,7 @@
   "name": "pokemon",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://myusername.github.io/my-app",
+  "homepage": "https://tcheny.github.io/pokemon",
   "dependencies": {
     "gh-pages": "^1.0.0",
     "react": "^16.0.0",
